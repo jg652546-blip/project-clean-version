@@ -1,21 +1,36 @@
-# Project 3: Spots
+# Spots
 
-An image sharing site.
+Spots is a small photo-sharing web app. Users can view and edit profile info, update avatar, add cards, like/unlike cards, and delete their own cards with confirmation.
 
-# Description
+## Functionality
 
-The Spots Project is a webpage for a simple social profile ion the style of a small photo-sharing platform. The main goal of this platform is to be able to show the user’s profile information and post multiple image posts. The header contains the logo of the site, below it is the profile section, which contains the user’s avatar, name, signature, and two functional buttons to edit the profile and add a new post. The lower part is the section with the cards expressing posts.
+- Load profile and cards from the API on page load
+- Edit profile name/about
+- Update profile avatar
+- Add new cards
+- Open card preview modal
+- Like/unlike cards with persistent server state
+- Delete cards with confirmation modal
+- Form validation and loading states (`Saving...`, `Deleting...`)
 
-# Tech Stock
+## Tech Stack
 
-- HTML
-- CSS
-- Responsive Designs
+- HTML5 semantic markup
+- CSS (BEM, responsive layout)
+- JavaScript (ES6 modules)
+- Webpack + Babel + PostCSS/Autoprefixer
 
-# Deployment
+## Project Media
 
- [View the live project](https://jg652546-blip.github.io/se_project_spots/)
+Add screenshots or GIFs of:
 
-# Project Pitch Video
+- Profile edit flow
+- Avatar update flow
+- Card creation + delete confirmation
+- Like/unlike behavior
 
-[video](https://1drv.ms/v/c/80f70839dc84f79c/EUQlCShbzX1Nrjr1KStLy2EBlNFEXzPQN2p2Ed4IqVAwDg?e=m7mR2E)
+## Deployment
+
+Add your GitHub Pages link here:
+
+- `https://<your-username>.github.io/<your-repo>/`
