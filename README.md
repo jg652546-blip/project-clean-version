@@ -1,21 +1,34 @@
-# Project 3: Spots
+# Spots
 
-### Overview  
+Spots is a small photo-sharing web app. Users can view and edit profile info, update avatar, add cards, like/unlike cards, and delete their own cards with confirmation.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+## Functionality
+
+- Load profile and cards from the API on page load
+- Edit profile name/about
+- Update profile avatar
+- Add new cards
+- Open card preview modal
+- Like/unlike cards with persistent server state
+- Delete cards with confirmation modal
+- Form validation and loading states (`Saving...`, `Deleting...`)
+
+## Tech Stack
+
+- HTML5 semantic markup
+- CSS (BEM, responsive layout)
+- JavaScript (ES6 modules)
+- Webpack + Babel + PostCSS/Autoprefixer
+
+## Project Media
+
+Add screenshots or GIFs of:
+
+- Profile edit flow
+- Avatar update flow
+- Card creation + delete confirmation
+- Like/unlike behavior
+
+## Deployment
+
+- `https://jg652546-blip.github.io/project-clean-version/`
