@@ -1,11 +1,5 @@
 import "./index.css";
 import defaultAvatar from "../images/avatar.jpg";
-import cardImage1 from "../images/1-photo-by-moritz-feldmann-from-pexels.jpg";
-import cardImage2 from "../images/2-photo-by-ceiline-from-pexels.jpg";
-import cardImage3 from "../images/3-photo-by-tubanur-dogan-from-pexels.jpg";
-import cardImage4 from "../images/4-photo-by-maurice-laschet-from-pexels.jpg";
-import cardImage5 from "../images/5-photo-by-van-anh-nguyen-from-pexels.jpg";
-import cardImage6 from "../images/6-photo-by-moritz-feldmann-from-pexels.jpg";
 
 import {
   enableValidation,
@@ -29,28 +23,19 @@ const api = new Api({
 });
 
 let currentUserId = null;
-const initialCards = [
-  { name: "Val Thorens", link: cardImage1 },
-  { name: "Restaurant terrace", link: cardImage2 },
-  { name: "An outdoor cafe", link: cardImage3 },
-  { name: "A very long bridge, over the forest...", link: cardImage4 },
-  { name: "Tunnel with morning light", link: cardImage5 },
-  { name: "Mountain house", link: cardImage6 },
-];
 
 // Initial page data load (cards + user profile)
 api
   .getAppInfo()
   .then(([cards, userInfo]) => {
     currentUserId = userInfo._id;
-    const cardsToRender = cards.length ? cards : initialCards;
-    cardsToRender.forEach((item) => {
+    cards.forEach((item) => {
       const cardEl = getCardElement(item);
       cardsList.append(cardEl);
     });
     profileNameEl.textContent = userInfo.name;
     profileDescriptionEl.textContent = userInfo.about;
-    setProfileAvatar(defaultAvatar);
+    setProfileAvatar(userInfo.avatar);
   })
   .catch(console.error);
 
