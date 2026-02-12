@@ -50,7 +50,7 @@ api
     });
     profileNameEl.textContent = userInfo.name;
     profileDescriptionEl.textContent = userInfo.about;
-    setProfileAvatar(userInfo.avatar);
+    setProfileAvatar(defaultAvatar);
   })
   .catch(console.error);
 

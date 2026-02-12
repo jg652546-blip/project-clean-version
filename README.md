@@ -31,6 +31,4 @@ Add screenshots or GIFs of:
 
 ## Deployment
 
-Add your GitHub Pages link here:
-
-- `https://<your-username>.github.io/<your-repo>/`
+- `https://jg652546-blip.github.io/project-clean-version/`
